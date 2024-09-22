@@ -1,0 +1,102 @@
+
+import Findprofessionals from './pages/Findprofessionals/Findprofessionals';
+import React from 'react'
+import "./App.css"
+import Navbar from './components/Navbar'
+import Home from './pages/home/Home'
+import Product from './Product'
+
+
+const App = () => {
+  return (
+    <div>
+
+      <div className='firstpage'>
+        <Home />
+        <div>
+          <Navbar />
+        </div>
+        <div>
+
+          <Product></Product>
+
+        </div>
+
+        <div>
+          <Findprofessionals />
+
+        </div>
+      </div>
+    </div>
+
+  )
+}
+
+export default App
+
+
+
+import Findprofessionals from './pages/Findprofessionals/Findprofessionals';
+import React from 'react'
+import "./App.css"
+import Navbar from './components/Navbar'
+import Home from './pages/home/Home'
+import Product from './Product'
+
+
+const App = () => {
+  return (
+    <div>
+
+      <div className='firstpage'>
+        <Home />
+        <div>
+          <Navbar />
+        </div>
+        <div>
+
+          <Product></Product>
+
+        </div>
+
+        <div>
+          <Findprofessionals />
+
+        </div>
+      </div>
+    </div>
+
+  )
+}
+
+export default App
+
+
+
+  {/* Modal */}
+      <div className="modal">
+        <Modal show={showModal} onHide={handleClose} centered>
+          <Modal.Header closeButton>
+            <Modal.Title>New message to {recipient}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <form >
+              <div className="mb-3">
+                <label htmlFor="recipient-name" className="col-form-label">Recipient:</label>
+                <input type="text" className="form-control" id="recipient-name" value={recipient} readOnly />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="message-text" className="col-form-label">Message:</label>
+                <textarea className="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>Close</Button>
+            <Button variant="primary" onClick={handleClose}>Send message</Button>
+          </Modal.Footer>
+        </Modal>
+      </div>
+
+
+

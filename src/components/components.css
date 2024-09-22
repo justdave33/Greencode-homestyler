@@ -1,0 +1,604 @@
+/* Ensure the navbar is visible on all screen sizes */
+.navbarHolder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1em;
+  background: #fff;
+  color: #000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.li {
+  text-decoration: none;
+  color: black;
+}
+
+.change-bg-color {
+  background-color: #fec76f;
+}
+
+.navlogo img {
+  margin-left: 2em;
+  height: 5em;
+  cursor: pointer;
+}
+
+.linksHolder {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  flex-grow: 1;
+}
+
+.linksHolder ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.linksHolder ul li {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  position: relative;
+  padding: 5px 0;
+}
+
+
+
+.navIcons {
+  font-size: 1.5em;
+  color: #fec76f;
+  gap: 3em;
+  display: flex;
+}
+
+.linksHolder ul li:hover {
+  color: #fec76f;
+}
+
+.linksHolder ul li::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #E2E2B6;
+  transition: width 0.3s ease;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.linksHolder ul li:hover::after {
+  width: 100%;
+}
+
+.navbarHolder>div:last-child {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.navbarHolder>div:last-child svg {
+  color: #fec76f;
+  font-size: 24px;
+  margin-right: 2em;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbarHolder>div:last-child svg:hover {
+  color: #fec76f;
+  transform: scale(1.1);
+}
+
+/* Hide the hamburger icon by default */
+.hamburger {
+  display: none;
+}
+
+/* Show hamburger on smaller screens */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+
+    display: flex;
+    align-items: flex-end;
+    z-index: 2000;
+  }
+
+  /* Hide the nav links initially on mobile */
+  .linksHolder {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 5em;
+    left: 0;
+    width: 100%;
+    background-color: white;
+
+    padding: 1em;
+    z-index: 999;
+  }
+
+  .linksHolder.active {
+    display: flex;
+  }
+
+  .linksHolder ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .linksHolder ul li {
+    font-size: 1.5em;
+    padding: 10px;
+    color: #f5f5f5;
+  }
+
+  .linksHolder ul li:hover {
+    background-color: #fec76f;
+    color: #000;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .navIcons {
+    display: none;
+  }
+}
+
+
+
+
+
+/* Testimonial code */
+.testimonial-section {
+  text-align: center;
+  position: relative;
+  margin-top: 10em !important;
+  box-sizing: border-box;
+  background-color: #fec76f;
+  padding-block: 3em;
+  padding-inline: 1em;
+}
+
+
+.testimonial-slider {
+  background-color: #fec76f;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-item {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+}
+
+.testimonial-description {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  color: #333;
+}
+
+.testimonial-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  object-fit: cover;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+}
+
+.testimonial-profession {
+  font-size: 1.2em;
+  color: #777;
+}
+
+.testimonial-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.arrow {
+  color: #021526;
+  border: none;
+  width: 2em;
+  cursor: pointer;
+  font-size: 3em;
+  user-select: none;
+}
+
+.arrow:hover {
+  background-color: #fec76f;
+}
+
+.testimonialText {
+  font-size: 2.5em;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+
+/* Beginning of footer */
+/* Footer section */
+.footerHolder {
+  margin-top: 15em;
+}
+
+.footer {
+  background-color: #021526;
+  color: #fec76f;
+  padding: 2em 1em;
+  font-family: "Montserrat Alternates", sans-serif;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  /* Center all content in the footer */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.footer-section {
+  padding: 1em;
+  margin: 0.5em;
+  font-size: 1em;
+  width: 100%;
+  /* Ensure each section takes full width */
+  max-width: 400px;
+  /* Limit section width for better readability on large screens */
+  box-sizing: border-box;
+  /* Ensure padding doesn’t affect width */
+}
+
+.footer-section h2 {
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.footer-section p,
+.footer-section ul {
+  margin: 0.5em 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 0.5em 0;
+}
+
+.footer-section ul li a {
+  color: #fec76f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.social-icon {
+  color: #fec76f;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1em;
+  font-size: 0.9em;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    padding: 1em 0;
+    width: 100%;
+    /* Take up full width on smaller screens */
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section h2 {
+    font-size: 1.1em;
+  }
+
+  .footer-section p,
+  .footer-section ul li {
+    font-size: 0.9em;
+  }
+
+  .footer {
+    padding: 1.5em 0.5em;
+  }
+
+  .social-icons {
+    gap: 0.5em;
+  }
+}
+
+
+/* Design style section */
+.designTextHolder {
+  display: flex;
+  align-items: center;
+  gap: 52em;
+  margin-top: 10em;
+}
+
+.designstlesHolder {
+  margin-top: 6em;
+}
+
+.designstylesHolder {
+  padding: 2em;
+  background-color: #f5f5f5;
+}
+
+.designstylesHolder {
+  padding: 2em;
+  background-color: #f5f5f5;
+}
+
+.designTextHolder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shopItems1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+}
+
+.shopItemContent1 {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  transition: background-color 0.4s ease;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.shopItemContent1:hover {
+  background-color: #021526;
+}
+
+.shopItemContent1:hover h3,
+.shopItemContent1:hover p {
+  color: #fec76f;
+}
+
+.shopItemImage1 {
+  width: 100%;
+  height: auto;
+  transition: transform 0.6s ease;
+  border-radius: 10px;
+}
+
+.imageContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.shopItemContent1:hover .shopItemImage {
+  transform: scale(1.1);
+}
+
+.shopItemContent1 h3,
+.shopItemContent1 p {
+  margin: 1em 0;
+  color: #333;
+  transition: color 0.4s ease;
+}
+
+
+.shopItemContent1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #021526;
+  z-index: 0;
+  transition: top 0.6s ease;
+}
+
+.shopItemContent1:hover::before {
+  top: 0;
+}
+
+.shopItemContent1 h3,
+.shopItemContent1 p {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+  .designTextHolder {
+    gap: 10em;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .linksHolder ul {
+    gap: 20px;
+  }
+
+  .designTextHolder {
+    gap: 5em;
+    flex-direction: column;
+  }
+
+  .shopItems {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .shopItemImage {
+    height: 10em;
+  }
+
+  .whychoose {
+    flex-direction: column;
+  }
+
+  .leftChoose,
+  .rightChoose {
+    width: 100%;
+  }
+
+  .leftImage {
+    height: 20em;
+  }
+
+  .icon1Holder,
+  .icon2Holder {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbarHolder {
+    padding: 1em;
+  }
+
+  .linksHolder ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .testimonialText {
+    font-size: 2em;
+  }
+
+  .testimonial-description {
+    font-size: 1em;
+  }
+
+  .shopItemContent {
+    padding: 1em;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .linksHolder {
+    display: none;
+    position: absolute;
+    top: 5em;
+    left: 0;
+    width: 100%;
+    background-color: #021526;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+    color: #f5f5f5;
+    z-index: 999;
+  }
+
+  .linksHolder ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navbarHolder {
+    justify-content: space-between;
+  }
+
+
+  .hamburger {
+    display: flex;
+  }
+
+
+  .linksHolder.open {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .navlogo img {
+    height: 3em;
+    margin-left: 1em;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .designTextHolder {
+    gap: 2em;
+    text-align: center;
+  }
+
+  .shopItemImage {
+    height: 8em;
+  }
+
+  .testimonialText {
+    font-size: 1.8em;
+  }
+
+  .leftImage {
+    height: 15em;
+  }
+
+  .social-icon {
+    font-size: 1.2em;
+  }
+}

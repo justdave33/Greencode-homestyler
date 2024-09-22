@@ -1,0 +1,406 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.homepageHolder {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.6);
+  opacity: 1;
+}
+
+.luxuryText {
+  font-size: 3.5em;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #fff;
+
+}
+
+.subTextHolder {
+  width: 50%;
+  align-items: flex-start;
+  display: flex;
+  font-weight: 400;
+  line-height: 1.3em;
+  color: #fff;
+}
+
+.textHolder {
+  position: relative;
+  z-index: 1;
+  margin-top: 15em;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons button {
+  padding: 12px 24px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.shop {
+  color: #fff;
+  border-radius: 2em;
+}
+
+.explore {
+  border-radius: 2em;
+  border: 0;
+
+}
+
+.shop:hover {
+  color: #021526;
+  transform: scale(1.05);
+}
+
+.buttons .explore:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.buttons {
+  display: flex;
+  gap: 1em;
+}
+
+
+/* Section 2 */
+.section22 {
+  margin-top: 37em;
+  width: 100%;
+  display: flex;
+  transition: background-color 0.3s ease;
+}
+
+
+.textSection {
+  width: 20%;
+  transition: transform 0.3s ease;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+
+.shopItems {
+  padding-left: 4em;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2em;
+  gap: 5em;
+}
+
+
+.shopItemImage {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1em;
+  height: 15em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.shopItemContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+
+.shopItemContent:hover {
+  transform: scale(1.05);
+}
+
+.shopItemImage:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.textSection:hover {
+  transform: translateY(-10px);
+}
+
+.section2:hover {
+  background-color: #f9f9f9;
+}
+
+
+/* Section 3 */
+.whychoose {
+  margin-top: 7em;
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.iconImage {
+  font-size: 2em;
+}
+
+.leftChoose {
+  width: 50%;
+}
+
+.rightChoose {
+  width: 50%;
+}
+
+.leftImage {
+  width: 100%;
+  height: 30em;
+}
+
+.icon1 {
+  display: flex;
+  flex-direction: column;
+  width: 15em;
+}
+
+.icon2 {
+  display: flex;
+  flex-direction: column;
+  width: 15em;
+}
+
+.icon1Holder {
+  display: flex;
+  gap: 2em;
+}
+
+.icon2Holder {
+  display: flex;
+  gap: 2em;
+}
+
+.iconDescription {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+@media screen and (max-width: 1200px) {
+  .textSection {
+    width: 30%;
+  }
+
+  .shopItems {
+    padding-left: 2em;
+    gap: 3em;
+  }
+
+  .luxuryText {
+    font-size: 2.5em;
+  }
+
+  .textHolder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15em;
+  }
+
+  /* 
+  .buttons {
+    margin-top: 2em;
+    display: flex;
+    gap: 1em;
+  } */
+
+  .backgroundPage {
+    min-height: 80vh;
+  }
+
+  /* .shop {
+    margin-bottom: 1em;
+    width: 50%;
+  }
+
+  .explore {
+    width: 50%;
+  } */
+}
+
+@media screen and (max-width: 992px) {
+  .luxuryText {
+    font-size: 2.2em;
+  }
+
+  .textSection {
+    width: 40%;
+  }
+
+  .subTextHolder {
+    width: 70%;
+    font-size: 1em;
+  }
+
+  .buttons {
+    display: flex;
+    margin-top: 1em;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section22 {
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: -0.1em;
+  }
+
+  .shopItems {
+    padding-left: 0;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .shopItemContent {
+    width: 90%;
+  }
+
+  .whychoose {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .leftChoose,
+  .rightChoose {
+    width: 100%;
+  }
+
+  .leftImage {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .luxuryText {
+    font-size: 2em;
+  }
+
+  .subTextHolder {
+    width: 90%;
+    font-size: 0.9em;
+  }
+
+  .textSection {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section2 {
+    margin-top: 5em;
+  }
+
+  .shopItems {
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 2em;
+  }
+
+  .whychoose {
+    margin-top: 5em;
+    gap: 1em;
+  }
+
+  .icon1,
+  .icon2 {
+    width: 100%;
+  }
+
+  .icon1Holder,
+  .icon2Holder {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .luxuryText {
+    font-size: 1.8em;
+  }
+
+  .buttons {
+    gap: 0.5em;
+  }
+
+  .subTextHolder {
+    font-size: 0.8em;
+  }
+
+  .shopItems {
+    gap: 1.5em;
+  }
+
+  .shopItemImage {
+    height: 10em;
+  }
+
+  .whychoose {
+    margin-top: 4em;
+    gap: 1em;
+  }
+
+  .iconDescription {
+    gap: 1em;
+  }
+
+  .leftImage {
+    height: 20em;
+  }
+
+  .icon1 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .luxuryText {
+    font-size: 1.5em;
+  }
+
+  .subTextHolder {
+    font-size: 0.7em;
+  }
+
+  .buttons button {
+    font-size: 14px;
+  }
+
+  .shopItemImage {
+    height: 8em;
+  }
+}

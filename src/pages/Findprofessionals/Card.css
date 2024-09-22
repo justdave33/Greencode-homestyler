@@ -1,0 +1,125 @@
+.card {
+    width: 55%;
+    margin: 20px;
+    height: auto;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    border: none;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    box-shadow:
+        4.1px 2.7px 5.3px rgba(0, 0, 0, 0.028),
+        13.8px 8.9px 17.9px rgba(0, 0, 0, 0.042),
+        62px 40px 80px rgba(0, 0, 0, 0.07);
+}
+
+
+.card-img {
+    width: 28rem;
+    object-fit: contain;
+}
+
+
+
+
+@media (max-width:768px) {
+    .card-container {
+        margin-left: 0rem;
+        display: flex;
+    }
+
+    .card-img {
+        width: 100%;
+        margin-bottom: 1rem;
+
+    }
+
+    .card {
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+}
+
+@media (max-width: 1281px) {
+    .card {
+        display: flex;
+        margin-left: 0rem;
+        width: 50%;
+        flex-direction: column;
+
+    }
+
+
+
+}
+
+@media (max-width: 888px) {
+
+
+    .card-container {
+        margin-left: 0;
+        width: 100%;
+
+    }
+
+    .card {
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+/* Modal sections */
+
+
+.formModal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+
+}
+
+.mailModal {
+    width: 100%;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.modalhead {
+    font-size: 15px;
+    text-align: center;
+    background: #d5ab55;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.modalbtn {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.txtarea {
+    width: 28rem;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+}

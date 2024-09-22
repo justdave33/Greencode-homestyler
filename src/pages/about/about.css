@@ -1,0 +1,321 @@
+.Header {
+  height: 400px;
+  background-image: url("../../../public/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  padding-top: 50px;
+}
+
+.sub-header {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.about>p {
+  width: 50%;
+}
+
+.Header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.top-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+  margin-left: 50px;
+  flex-direction: column;
+}
+
+.top-container>div {
+  margin-top: 20px;
+}
+
+.top-container>div>h2 {
+  color: #fec76f;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.button-container {
+  height: 50px;
+}
+
+.button-container>button {
+  transition: 0.5s;
+  width: 100px;
+  height: 40px;
+  background-color: rgba(250, 250, 250, 0%);
+  border: 1px solid white;
+  color: white;
+}
+
+.button-container>button:hover {
+  transition: 0.5s;
+  background-color: white;
+  color: black;
+}
+
+.row1 {
+  display: flex;
+  gap: 50px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.body2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 100px;
+}
+
+.section2 {
+  margin-top: 100px;
+  background-color: #EBE9E9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+body {}
+
+.section2>h2 {
+  font-weight: 400;
+  font-size: 22px;
+  color: #fec76f;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.8em;
+}
+
+.row>p {
+  margin-top: 0px;
+}
+
+.name-row {
+  gap: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pic1,
+.pic2,
+.pic3 {
+  width: 350px;
+  height: 310px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pic1 {
+  background-image: url('../../../public/pic1.jpg');
+}
+
+.pic2 {
+  background-image: url('../../../public/pic2.jpg');
+}
+
+.pic3 {
+  background-image: url('../../../public/pic3.jpg');
+}
+
+.body2-image {
+  width: 410px;
+  height: 470px;
+  box-shadow: 10px 8px 12px 10px rgb(200, 200, 200);
+  border-radius: 20px;
+  background-size: cover;
+  background-image: url('../../../public/3d-rendering-loft-luxury-living-room-with-shelf-near-dining-table.jpg');
+}
+
+hr {
+  margin-top: 30px;
+}
+
+.icon {
+  color: gold;
+  font-size: 22px;
+}
+
+.couch {
+  width: 500px;
+  height: 200px;
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-image: url('../../../public/couch.png');
+}
+
+.space {
+  width: 10%;
+}
+
+.Header>.about {
+  z-index: 1;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about>p {
+  margin-top: -30px;
+}
+
+.sub-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .top-container {
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 0;
+  }
+
+  .couch {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+
+  .body2 {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .couch {
+    margin-left: 120px;
+    width: 500px;
+    height: 200px;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-image: url('../../../public/couch.png');
+  }
+
+  .name-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .Header {
+    height: 300px;
+    font-size: 24px;
+  }
+
+  .top-container {
+    gap: 10px;
+  }
+
+  .pic1,
+  .pic2,
+  .pic3 {
+    width: 100%;
+    height: auto;
+  }
+
+  .body2-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .couch {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+
+  .name-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .Header {
+    height: 200px;
+    font-size: 18px;
+  }
+
+  .button-container>button {
+    width: 80px;
+    height: 30px;
+  }
+
+  .top-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section2>h2 {
+    font-size: 18px;
+  }
+
+  .name-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about>p {
+    margin-top: 0;
+  }
+
+  .row1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-container>h2 {
+    border: 1px solid black;
+  }
+
+  .top-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

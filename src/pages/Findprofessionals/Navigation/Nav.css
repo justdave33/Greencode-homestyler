@@ -1,0 +1,53 @@
+nav {
+  display: flex;
+  border-bottom: 2px solid #f3f3f3;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  z-index: 999;
+
+  width: 100%;
+
+}
+
+input {
+  padding: 12px 20px;
+  border: none;
+  background: #f7f6f6;
+  outline: none;
+  margin-right: 20px;
+  border-radius: 5px;
+  position: relative;
+  width: 20rem;
+}
+
+@media(max-width:780px) {
+
+  input {
+    padding: 12px 20px;
+    border: none;
+    background: #f7f6f6;
+    outline: none;
+
+    border-radius: 5px;
+    position: relative;
+    width: 20rem;
+  }
+
+}
+
+.nav-icons {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 2rem;
+
+}
+
+.microphone-icon {
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}

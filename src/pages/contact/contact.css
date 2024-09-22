@@ -1,0 +1,455 @@
+/* Default Styles */
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.Hero-image {
+  height: 501.65px;
+  background-image: url("../../../public/Fluttua Replis Bed by Lago.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.Hero-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.hero-content {
+  z-index: 1;
+}
+
+.hero-content>h1 {
+  font-size: 48px;
+}
+
+.hero-content>h4 {
+  margin-top: -20px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  margin-top: 90px;
+}
+
+hr {
+  color: grey;
+}
+
+.sendmessage {
+  margin-top: 20px;
+  width: 576px;
+  height: 590px;
+  padding-bottom: 20px;
+  background-color: #fec76f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 30px 2px rgb(200, 200, 200);
+}
+
+.sendmessage>span {
+  display: flex;
+  font-weight: 600;
+  width: 87%;
+  margin-bottom: 2px;
+  font-size: 39px;
+}
+
+.sendmessage>p {
+  color: white;
+  width: 87%;
+  line-height: 22.4px;
+  font-size: 17px;
+}
+
+.message-form>button {
+  transition: 0.5s;
+  margin-top: 15px;
+  padding: 0.8vh;
+  width: 101%;
+  border: none;
+  color: white;
+  letter-spacing: 1.5px;
+  background-color: #021526;
+  height: 40px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: blue;
+}
+
+.message-form>button:hover {
+  transition: 0.5s;
+  background-color: white;
+  color: black;
+}
+
+.icon {
+  font-size: 26px;
+}
+
+.icon-box-outer1,
+.icon-box-outer2 {
+  display: flex;
+}
+
+.message-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.lab-pair1,
+.lab-pair2 {
+  display: flex;
+}
+
+label {
+  margin-top: 3px;
+}
+
+.lab-pair1>label,
+.lab-pair2>label {
+  display: flex;
+  flex-direction: column;
+}
+
+.lab-pair1>label>input,
+.lab-pair2>label>input {
+  height: 40px;
+  border: none;
+  background-color: rgb(249, 249, 249);
+  width: 235px;
+  border: 1px solid rgb(238, 238, 238);
+}
+
+label {
+  font-weight: 500;
+}
+
+.sub>input {
+  height: 40px;
+  width: 490px;
+  border: none;
+  background-color: rgb(249, 249, 249);
+  width: 99.2%;
+  border: 1px solid rgb(238, 238, 238);
+}
+
+.textbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.textbox>textarea {
+  width: 99%;
+  border: none;
+  background-color: rgb(249, 249, 249);
+  border: 1px solid rgb(238, 238, 238);
+}
+
+.space {
+  width: 10px;
+}
+
+.little-box {
+  width: 56px;
+  height: 56px;
+  background-color: #fec76f;
+  margin-top: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.boxes-container>span {
+  font-size: 39px;
+  font-weight: 500;
+  display: block;
+}
+
+.boxes-container>.text {
+  padding-bottom: 20px;
+  color: grey;
+}
+
+.boxes-container>p {
+  color: #fec76f;
+}
+
+.no-space>h5 {
+  margin-bottom: -13px;
+}
+
+.flex {
+  display: flex;
+}
+
+.myhr {
+  margin-top: -50px;
+  width: 40%;
+}
+
+.words {
+  flex-direction: column;
+  font-size: 48px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex1 {
+  display: flex;
+  margin-right: 20px;
+}
+
+.no-space>p {
+  color: grey;
+}
+
+.icon {
+  color: black;
+}
+
+.flex2 {
+  display: flex;
+  margin-right: 29px;
+}
+
+.circle {
+  transition: 0.5s;
+  width: 36px;
+  height: 36px;
+  background-color: #fec76f;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box-outer2 {
+  gap: 15px;
+}
+
+.one {
+  margin-top: 25px;
+}
+
+.flex1>.no-space {
+  margin-top: 35px;
+}
+
+.no-space>h5 {
+  margin-bottom: 2px;
+}
+
+.no-space {
+  margin-bottom: 30px;
+}
+
+.circle:hover {
+  transition: 0.5s;
+  background-color: black;
+  width: 37px;
+  height: 37px;
+  color: white;
+}
+
+.icons {
+  display: flex;
+  gap: 5px;
+}
+
+.map {
+  margin-top: 200px;
+}
+
+@media(max-width: 1166px) {
+  .sendmessage {
+    width: 70%;
+    height: 100%;
+  }
+
+  .map {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .message-form>.lab-pair1,
+  .message-form>.lab-pair2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon-box-outer1,
+  .icon-box-outer2 {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Mobile Responsive Styles (for screens up to 768px) */
+@media (max-width: 768px) {
+  .Hero-image {
+    height: 300px;
+    font-size: 18px;
+  }
+
+  .hero-content>h1 {
+    font-size: 28px;
+  }
+
+  .hero-content>h4 {
+    font-size: 16px;
+  }
+
+  .body {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+  }
+
+  .sendmessage {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    box-shadow: none;
+  }
+
+  .message-form>button {
+    width: 100%;
+  }
+
+  .message-form>.lab-pair1,
+  .message-form>.lab-pair2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon-box-outer1,
+  .icon-box-outer2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lab-pair1>label>input,
+  .lab-pair2>label>input,
+  .sub>input,
+  .textbox>textarea {
+    width: 100%;
+  }
+
+  .little-box {
+    width: 50px;
+    height: 50px;
+  }
+
+  .boxes-container>span {
+    font-size: 32px;
+  }
+
+  .lab-pair1>label>input,
+  .lab-pair2>label>input,
+  .sub>input,
+  .textbox>textarea {
+    font-size: 14px;
+    width: 100%;
+    padding-left: 10px;
+  }
+}
+
+
+
+/* Small Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+  .Hero-image {
+    height: 200px;
+    font-size: 16px;
+  }
+
+  .hero-content>h1 {
+    font-size: 24px;
+  }
+
+  .hero-content>h4 {
+    font-size: 14px;
+  }
+
+  .sendmessage {
+    padding: 20px;
+  }
+
+  .message-form>button {
+    padding: 10px;
+  }
+
+  .message-form>.lab-pair1,
+  .message-form>.lab-pair2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon-box-outer1,
+  .icon-box-outer2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lab-pair1>label>input,
+  .lab-pair2>label>input,
+  .sub>input,
+  .textbox>textarea {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .little-box {
+    width: 40px;
+    height: 40px;
+  }
+
+  .boxes-container>span {
+    font-size: 24px;
+  }
+
+  .map {
+    display: flex;
+    margin-top: 100px;
+  }
+}

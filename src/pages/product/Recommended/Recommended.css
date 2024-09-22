@@ -1,0 +1,53 @@
+
+.recommended-flex {
+  display: flex;
+  margin-left: 20rem;
+  flex-wrap: wrap; 
+}
+
+.recommended-flex button{
+  background-color: #fec76f;
+}
+
+.recommended-title {
+  margin-left: 20rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.recommended-flex > * {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.recommended-flex > *:hover,
+.recommended-flex > *:focus,
+.recommended-flex > *:active {
+  background-color: #fec76f;
+  transform: scale(1.05); 
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); 
+  cursor: pointer; 
+}
+
+
+@media (max-width: 768px) {
+  .recommended-flex {
+    margin-left: 0rem;
+    flex-direction: row; 
+    justify-content: space-between; 
+    margin-left: 23px;
+  }
+
+  .recommended-flex > * {
+    width: 48%; 
+    margin-bottom: 10px; 
+  }
+  .recommended-title{
+
+  margin-left: 2rem;
+
+
+  }
+}
+
+
